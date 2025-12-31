@@ -43,7 +43,7 @@ graph LR
 * **The Ops:** Zero-touch CI/CD with automated quality gates.
 * **Documentation:** Read my [Architectural Decision Records (ADRs)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/tree/main/docs/adr) to see how I handle security, FinOps, and resilience trade-offs.
 
-#### ["Resume as Code" CI/CD Pipeline](https://github.com/rdbumstead/resume-as-code) &nbsp;&nbsp; [![Build Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/resume-pipeline.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code)
+#### ["Resume as Code" CI/CD Pipeline](https://github.com/rdbumstead/resume-as-code) &nbsp;&nbsp; [![Build Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/resume-pipeline.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code) ![Import Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/import-resume.yml/badge.svg)
 > *Treating professional career documentation as a software product.*
 
 * **Infrastructure as Code:** An event-driven pipeline that transforms Markdown source into immutable PDF artifacts using GitHub Actions and Docker.
