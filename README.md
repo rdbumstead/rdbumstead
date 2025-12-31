@@ -29,7 +29,9 @@ graph LR
     %% Define Styles
     classDef sfdc fill:#00A1E0,stroke:#005FB2,stroke-width:2px,color:white,font-weight:bold;
     classDef aws fill:#FF9900,stroke:#CC7A00,stroke-width:2px,color:white,font-weight:bold;
-    classDef ext fill:#f9f9f9,stroke:#333,stroke-width:2px,color:black,font-weight:bold;
+    classDef jira fill:#0052CC,stroke:#0747A6,stroke-width:2px,color:white,font-weight:bold;
+    classDef github fill:#24292F,stroke:#1B1F23,stroke-width:2px,color:white,font-weight:bold;
+    classDef user fill:#f9f9f9,stroke:#333,stroke-width:2px,color:black,font-weight:bold;
 
     %% Nodes
     User((User)) 
@@ -55,7 +57,9 @@ graph LR
     %% Apply Styles
     class LWR,SF_GQL,DB,Apex,AI sfdc;
     class Lambda aws;
-    class User,Jira,GitHub ext;
+    class Jira jira;
+    class GitHub github;
+    class User user;
 
     %% Global Link Styling for visibility
     linkStyle default stroke-width:2px,fill:none,stroke:lightgray;
