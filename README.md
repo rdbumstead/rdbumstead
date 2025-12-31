@@ -37,7 +37,7 @@ graph LR
 
 ### 📂 Engineering Highlights
 
-#### [Architecture-First Reference Implementation](https://github.com/rdbumstead/salesforce-platform-architect-portfolio)
+#### [Salesforce Platform Architect Porfolio](https://github.com/rdbumstead/salesforce-platform-architect-portfolio)
 > *An open-source reference implementation for enterprise delivery patterns.*
 
 * **The Architecture:** Designed a multi-cloud system using Salesforce LWR, GraphQL, Apex, and AWS Lambda.
