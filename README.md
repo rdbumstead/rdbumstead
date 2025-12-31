@@ -13,24 +13,52 @@
 I bridge the gap between executive strategy and enforceable technical architecture, specializing in **architecture-first delivery**, **DevOps maturity**, and **resilience engineering** for governed, multi-cloud systems (Salesforce + AWS).
 
 ### 🛠 Tech Stack
-* **Salesforce Platform:** Apex, LWC, LWR, Agentforce, Flow
-* **Architecture:** API-First (OpenAPI 3.0), Event-Driven, C4 Modeling
-* **DevOps:** GitHub Actions, SFDX, Docker, JWT Auth, PMD
-* **Cloud:** AWS Lambda, S3, Multi-Cloud Patterns
+
+| Domain | Stack |
+| :--- | :--- |
+| **☁️ Salesforce** | <img src="https://img.shields.io/badge/Apex-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white" /> <img src="https://img.shields.io/badge/LWC-00A1E0?style=for-the-badge&logo=lightning&logoColor=white" /> <img src="https://img.shields.io/badge/Agentforce-00A1E0?style=for-the-badge&logo=probot&logoColor=white" /> <img src="https://img.shields.io/badge/Flow_Builder-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white" /> |
+| **⚡ Cloud** | <img src="https://img.shields.io/badge/AWS_Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white" /> <img src="https://img.shields.io/badge/Amazon_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white" /> <img src="https://img.shields.io/badge/Multi_Cloud-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" /> |
+| **🚀 DevOps** | <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" /> <img src="https://img.shields.io/badge/SFDX_CLI-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/PMD_Analysis-green?style=for-the-badge&logo=codacy&logoColor=white" /> |
+| **📐 Architecture** | <img src="https://img.shields.io/badge/OpenAPI_3.0-6BA539?style=for-the-badge&logo=openapi-initiative&logoColor=white" /> <img src="https://img.shields.io/badge/Event_Driven-B00000?style=for-the-badge&logo=apachekafka&logoColor=white" /> <img src="https://img.shields.io/badge/C4_Modeling-000000?style=for-the-badge&logo=structurizr&logoColor=white" /> |
 
 ### 📐 System Architecture
 *A high-level view of the multi-cloud pattern used in my reference implementation.*
 
 ```mermaid
 graph LR
-    User((User)) --> LWR[Experience Cloud LWR]
-    LWR -->|Native GraphQL| SF_GQL[Salesforce GraphQL API]
-    SF_GQL --> DB[(Custom Objects)]
-    LWR -->|External Gateway| Lambda[AWS Lambda]
-    LWR -->|Runtime| Apex[Apex Runtime]
-    Apex <--> AI[Agentforce Agent]
-    Apex -->|REST| Jira[Jira API]
-    Apex -->|REST| GitHub[GitHub API]
+    %% Define Styles
+    classDef sfdc fill:#00A1E0,stroke:#005FB2,stroke-width:2px,color:white,font-weight:bold;
+    classDef aws fill:#FF9900,stroke:#CC7A00,stroke-width:2px,color:white,font-weight:bold;
+    classDef ext fill:#f9f9f9,stroke:#333,stroke-width:2px,color:black,font-weight:bold;
+
+    %% Nodes
+    User((User)) 
+    LWR[Experience Cloud LWR]
+    SF_GQL[Salesforce GraphQL API]
+    DB[(Custom Objects)]
+    Lambda[AWS Lambda]
+    Apex[Apex Runtime]
+    AI[Agentforce Agent]
+    Jira[Jira API]
+    GitHub[GitHub API]
+
+    %% Relationships
+    User --> LWR
+    LWR -->|Native GraphQL| SF_GQL
+    SF_GQL --> DB
+    LWR -->|External Gateway| Lambda
+    LWR -->|Runtime| Apex
+    Apex <--> AI
+    Apex -->|REST| Jira
+    Apex -->|REST| GitHub
+
+    %% Apply Styles
+    class LWR,SF_GQL,DB,Apex,AI sfdc;
+    class Lambda aws;
+    class User,Jira,GitHub ext;
+
+    %% Global Link Styling for visibility
+    linkStyle default stroke-width:2px,fill:none,stroke:lightgray;
 ```
 
 ---
