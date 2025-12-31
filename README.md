@@ -1,17 +1,22 @@
 # Hi, I'm Ryan Bumstead 👋
 
 ### ☁️ Salesforce Platform Architect
-I bridge the gap between executive strategy and enforceable technical architecture, specializing in **architecture-first delivery**, **DevOps maturity**, and **resilience engineering** for governed, multi-cloud systems (Salesforce + AWS).
+
+**📄 Professional Materials**  
+[![PDF Resume](https://img.shields.io/badge/PDF_Resume-ec1c24?logo=adobeacrobatreader&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/latest/download/RyanBumstead_Resume.pdf) [![Resume Source](https://img.shields.io/badge/Source_Markdown-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md) [![Portfolio](https://img.shields.io/badge/Portfolio-ryanbumstead.com-4A90E2?logo=googlechrome&logoColor=white)](https://ryanbumstead.com)
+
+**📫 Connect With Me**  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ryan_Bumstead-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/ryanbumstead) [![Email](https://img.shields.io/badge/Email-ryan@ryanbumstead.com-D14836?logo=gmail&logoColor=white)](mailto:ryan@ryanbumstead.com) [![Trailhead](https://img.shields.io/badge/Trailhead-rbumstead-00A1E0?logo=salesforce&logoColor=white)](https://www.salesforce.com/trailblazer/rbumstead)
 
 ---
+
+I bridge the gap between executive strategy and enforceable technical architecture, specializing in **architecture-first delivery**, **DevOps maturity**, and **resilience engineering** for governed, multi-cloud systems (Salesforce + AWS).
 
 ### 🛠 Tech Stack
 * **Salesforce Platform:** Apex, LWC, LWR, Agentforce, Flow
 * **Architecture:** API-First (OpenAPI 3.0), Event-Driven, C4 Modeling
 * **DevOps:** GitHub Actions, SFDX, Docker, JWT Auth, PMD
 * **Cloud:** AWS Lambda, S3, Multi-Cloud Patterns
-
----
 
 ### 📐 System Architecture
 *A high-level view of the multi-cloud pattern used in my reference implementation.*
@@ -26,9 +31,6 @@ graph LR
     Apex <--> AI[Agentforce Agent]
     Apex -->|REST| Jira[Jira API]
     Apex -->|REST| GitHub[GitHub API]
-    style LWR fill:#00A1E0,stroke:#fff,stroke-width:2px,color:#fff
-    style Lambda fill:#FF9900,stroke:#fff,stroke-width:2px,color:#fff
-    style AI fill:#16325c,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
 ---
@@ -50,8 +52,6 @@ graph LR
 * **Security First:** Implemented a "Secrets-First" pattern, decoupling PII (Phone/Email) from the codebase using GitHub Secrets.
 * **Automated Quality:** Custom Node.js scripts audit hyperlinks and inject portfolio statistics before compilation.
 
----
-
 ### 📜 Certifications
 * Salesforce Agentforce Specialist
 * Salesforce Data Cloud Consultant
@@ -61,8 +61,4 @@ graph LR
 
 ---
 
-### 📫 Connect
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ryan_Bumstead-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/ryanbumstead)
-[![Portfolio](https://img.shields.io/badge/Portfolio-ryanbumstead.com-4A90E2?logo=googlechrome&logoColor=white)](https://ryanbumstead.com)
-[![Email](https://img.shields.io/badge/Email-ryan@ryanbumstead.com-D14836?logo=gmail&logoColor=white)](mailto:ryan@ryanbumstead.com)
-[![Trailhead](https://img.shields.io/badge/Trailhead-rbumstead-00A1E0?logo=salesforce&logoColor=white)](https://www.salesforce.com/trailblazer/rbumstead)
+*Looking for a Salesforce Platform Architect who thinks in systems and delivers with precision? Let's connect above!*
