@@ -31,7 +31,7 @@ graph LR
     classDef aws fill:#FF9900,stroke:#CC7A00,stroke-width:2px,color:white,font-weight:bold;
     classDef jira fill:#0052CC,stroke:#0747A6,stroke-width:2px,color:white,font-weight:bold;
     classDef github fill:#24292F,stroke:#1B1F23,stroke-width:2px,color:white,font-weight:bold;
-    classDef user fill:#f9f9f9,stroke:#333,stroke-width:2px,color:black,font-weight:bold;
+    classDef user fill:#333333,stroke:#000000,stroke-width:2px,color:white,font-weight:bold;
 
     %% Nodes
     User((User)) 
