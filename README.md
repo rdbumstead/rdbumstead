@@ -16,10 +16,10 @@ I bridge the gap between executive strategy and enforceable technical architectu
 
 | Domain | Stack |
 | :--- | :--- |
-| **☁️ Salesforce** | ![Apex](https://img.shields.io/badge/Apex-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white) ![LWC](https://img.shields.io/badge/LWC-00A1E0?style=for-the-badge&logo=lightning&logoColor=white) ![Agentforce](https://img.shields.io/badge/Agentforce-00A1E0?style=for-the-badge&logo=probot&logoColor=white) ![Flow](https://img.shields.io/badge/Flow_Builder-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white) |
-| **⚡ Cloud** | ![AWS Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white) ![Amazon S3](https://img.shields.io/badge/Amazon_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white) ![Multi-Cloud](https://img.shields.io/badge/Multi_Cloud-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white) |
-| **🚀 DevOps** | ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white) ![SFDX](https://img.shields.io/badge/SFDX_CLI-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![PMD](https://img.shields.io/badge/PMD_Analysis-green?style=for-the-badge&logo=codacy&logoColor=white) |
-| **📐 Architecture** | ![OpenAPI](https://img.shields.io/badge/OpenAPI_3.0-6BA539?style=for-the-badge&logo=openapi-initiative&logoColor=white) ![Event Driven](https://img.shields.io/badge/Event_Driven-B00000?style=for-the-badge&logo=apachekafka&logoColor=white) ![C4 Modeling](https://img.shields.io/badge/C4_Modeling-000000?style=for-the-badge&logo=structurizr&logoColor=white) |
+| **☁️ Salesforce** | **Apex** · **LWC** · **Agentforce** · **Flow Builder** |
+| **⚡ Cloud** | **AWS Lambda** · **S3** · **Multi-Cloud Architecture** |
+| **🚀 DevOps** | **GitHub Actions** · **SFDX CLI** · **Docker** · **PMD** |
+| **📐 Architecture** | **OpenAPI 3.0** · **Event-Driven** · **C4 Modeling** |
 
 ### 📐 System Architecture
 *A high-level view of the multi-cloud pattern used in my reference implementation.*
