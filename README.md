@@ -32,37 +32,44 @@ graph LR
     classDef jira fill:#0052CC,stroke:#0747A6,stroke-width:2px,color:white,font-weight:bold;
     classDef github fill:#24292F,stroke:#1B1F23,stroke-width:2px,color:white,font-weight:bold;
     classDef user fill:#333333,stroke:#000000,stroke-width:2px,color:white,font-weight:bold;
+    classDef future fill:#FFE5B4,stroke:#FFA500,stroke-width:2px,stroke-dasharray: 5 5;
 
     %% Nodes
-    User((User)) 
+    User((User))
     LWR[Experience Cloud LWR]
     SF_GQL[Salesforce GraphQL API]
     DB[(Custom Objects)]
-    Lambda[AWS Lambda]
+    Lambda[AWS Lambda Gateway<br/>Phase 8 - Q2 2026]
     Apex[Apex Runtime]
     AI[Agentforce Agent]
     Jira[Jira API]
     GitHub[GitHub API]
+    Resume[Resume Engine<br/>Future]
 
-    %% Relationships
+    %% Live MVP Connections (Solid)
     User --> LWR
-    LWR -->|Native GraphQL| SF_GQL
+    LWR -->|Native GraphQL<br/>lightning/uiGraphQLApi| SF_GQL
     SF_GQL --> DB
-    LWR -->|External Gateway| Lambda
-    LWR -->|Runtime| Apex
+    LWR -->|Apex REST| Apex
     Apex <--> AI
-    Apex -->|REST| Jira
-    Apex -->|REST| GitHub
+    Apex -->|REST via<br/>Named Credentials| Jira
+    Apex -->|REST via<br/>Named Credentials| GitHub
+
+    %% Phase 8 Connections (Dashed)
+    LWR -.->|Phase 8<br/>Design Complete| Lambda
+    Lambda -.->|Function URL| Apex
+    Lambda -.->|Serverless| Resume
 
     %% Apply Styles
     class LWR,SF_GQL,DB,Apex,AI sfdc;
-    class Lambda aws;
+    class Lambda,Resume aws;
     class Jira jira;
     class GitHub github;
     class User user;
 
-    %% Global Link Styling for visibility
-    linkStyle default stroke-width:2px,fill:none,stroke:lightgray;
+    %% Link Styling
+    linkStyle 0,1,2,3,4,5,6 stroke:#2ECC71,stroke-width:3px;
+    linkStyle 7,8,9 stroke:#FFA500,stroke-width:2px,stroke-dasharray:5;
 ```
 
 ---
