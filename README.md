@@ -26,50 +26,50 @@ I bridge the gap between executive strategy and enforceable technical architectu
 
 ```mermaid
 graph LR
-    %% Define Styles
-    classDef sfdc fill:#00A1E0,stroke:#005FB2,stroke-width:2px,color:white,font-weight:bold;
-    classDef aws fill:#FF9900,stroke:#CC7A00,stroke-width:2px,color:white,font-weight:bold;
-    classDef jira fill:#0052CC,stroke:#0747A6,stroke-width:2px,color:white,font-weight:bold;
-    classDef github fill:#24292F,stroke:#1B1F23,stroke-width:2px,color:white,font-weight:bold;
-    classDef user fill:#333333,stroke:#000000,stroke-width:2px,color:white,font-weight:bold;
-    classDef future fill:#FFE5B4,stroke:#FFA500,stroke-width:2px,stroke-dasharray: 5 5;
+    %%{init: {'flowchart': {'nodeSpacing': 50, 'rankSpacing': 50}}}%%
+    %% ========= BRAND STYLES =========
+    classDef user fill:#424242,stroke:#000000,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef sfdc fill:#00A1E0,stroke:#005FB2,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef aws fill:#FF9900,stroke:#CC7A00,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef jira fill:#0052CC,stroke:#003A8F,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef github fill:#24292E,stroke:#000000,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef data fill:#8E24AA,stroke:#4A148C,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef future fill:#FFF3E0,stroke:#FB8C00,stroke-width:2px,stroke-dasharray:5 5;
 
-    %% Nodes
+    %% ========= NODES =========
     User((User))
-    LWR[Experience Cloud LWR]
-    SF_GQL[Salesforce GraphQL API]
-    DB[(Custom Objects)]
-    Lambda[AWS Lambda Gateway<br/>Phase 8 - Q2 2026]
+    LWR[Experience Cloud<br/>LWR]
+    GQL[Salesforce<br/>GraphQL]
     Apex[Apex Runtime]
-    AI[Agentforce Agent]
-    Jira[Jira API]
+    DB[(Custom Objects)]
+    AI[Agentforce]
+    Jira[Jira Cloud API]
     GitHub[GitHub API]
-    Resume[Resume Engine<br/>Future]
+    Lambda[AWS Lambda<br/>Phase 8]
 
-    %% Live MVP Connections (Solid)
+    %% ========= FLOWS =========
     User --> LWR
-    LWR -->|Native GraphQL<br/>lightning/uiGraphQLApi| SF_GQL
-    SF_GQL --> DB
-    LWR -->|Apex REST| Apex
+    LWR --> GQL
+    GQL --> DB
+    LWR --> Apex
     Apex <--> AI
-    Apex -->|REST via<br/>Named Credentials| Jira
-    Apex -->|REST via<br/>Named Credentials| GitHub
+    Apex --> Jira
+    Apex --> GitHub
 
-    %% Phase 8 Connections (Dashed)
-    LWR -.->|Phase 8<br/>Design Complete| Lambda
-    Lambda -.->|Function URL| Apex
-    Lambda -.->|Serverless| Resume
+    %% ========= FUTURE =========
+    LWR -.-> Lambda
+    Lambda -.-> Apex
 
-    %% Apply Styles
-    class LWR,SF_GQL,DB,Apex,AI sfdc;
-    class Lambda,Resume aws;
+    %% ========= APPLY STYLES =========
+    class User user;
+    class LWR,GQL,Apex,AI sfdc;
+    class DB data;
     class Jira jira;
     class GitHub github;
-    class User user;
+    class Lambda aws;
 
-    %% Link Styling
-    linkStyle 0,1,2,3,4,5,6 stroke:#2ECC71,stroke-width:3px;
-    linkStyle 7,8,9 stroke:#FFA500,stroke-width:2px,stroke-dasharray:5;
+    %% ========= CRITICAL PATH =========
+    linkStyle 0,1,2 stroke:#2ECC71,stroke-width:3px;
 ```
 
 ---
