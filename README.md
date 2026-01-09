@@ -3,7 +3,7 @@
 ### ☁️ Salesforce Platform Architect
 
 **📄 Professional Materials**  
-[![PDF Resume](https://img.shields.io/badge/PDF_Resume-ec1c24?logo=adobeacrobatreader&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/latest/download/RyanBumstead_Resume.pdf) [![Resume Source](https://img.shields.io/badge/Source_Markdown-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md) [![Portfolio](https://img.shields.io/badge/Portfolio-ryanbumstead.com-4A90E2?logo=googlechrome&logoColor=white)](https://ryanbumstead.com)
+[![PDF Resume](https://img.shields.io/badge/PDF_Resume-ec1c24?logo=adobeacrobatreader&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/pdf/RyanBumstead_Resume.pdf) [![Resume Source](https://img.shields.io/badge/Source_Markdown-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md) [![Portfolio](https://img.shields.io/badge/Portfolio-ryanbumstead.com-4A90E2?logo=googlechrome&logoColor=white)](https://ryanbumstead.com)
 
 **📫 Connect With Me**  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ryan_Bumstead-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/ryanbumstead) [![Email](https://img.shields.io/badge/Email-ryan@ryanbumstead.com-D14836?logo=gmail&logoColor=white)](mailto:ryan@ryanbumstead.com) [![Trailhead](https://img.shields.io/badge/Trailhead-rbumstead-00A1E0?logo=salesforce&logoColor=white)](https://www.salesforce.com/trailblazer/rbumstead)
