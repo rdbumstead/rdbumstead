@@ -97,6 +97,16 @@ graph LR
 * **Security First:** Implemented a "Secrets-First" pattern, decoupling PII (Phone/Email) from the codebase using GitHub Secrets.
 * **Automated Quality:** Custom Node.js scripts audit hyperlinks and inject portfolio statistics before compilation.
 
+#### [Setup Salesforce CLI Action](https://github.com/rdbumstead/setup-salesforce-action)
+[![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Setup%20Salesforce%20CLI-blue.svg)](https://github.com/marketplace/actions/setup-salesforce-cli) [![GitHub release](https://img.shields.io/github/v/release/rdbumstead/setup-salesforce-action)](https://github.com/rdbumstead/setup-salesforce-action/releases) [![Test Action](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test.yml/badge.svg)](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test.yml)
+
+> *A production-ready GitHub Action for Salesforce CI/CD pipelines.*
+
+* **Performance:** 20-45 second setup with intelligent caching (vs 2-3 min without)
+* **Security:** JWT-based authentication with automatic key cleanup
+* **Flexibility:** Fully optional plugin system - install only what you need
+* **Community Impact:** Published to GitHub Marketplace for the Salesforce ecosystem
+
 ### 📜 Certifications
 * Salesforce Agentforce Specialist
 * Salesforce Data Cloud Consultant
