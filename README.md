@@ -108,11 +108,14 @@ graph LR
 * **Community Impact:** Published to GitHub Marketplace for the Salesforce ecosystem
 
 ### 📜 Certifications
-* Salesforce Agentforce Specialist
-* Salesforce Data Cloud Consultant
-* Salesforce Education Cloud Consultant
-* Salesforce Platform App Builder
-* Salesforce Administrator I & II
+* Salesforce Certified Agentforce Specialist
+* Salesforce Certified Data Cloud Consultant
+* Salesforce Certified Education Cloud Consultant
+* Salesforce Certified Platform App Builder
+* Salesforce Certified Platform Administrator
+* Salesforce Certified Platform Administrator II
+
+[Verify these credentials on Trailhead ↗](https://www.salesforce.com/trailblazer/rbumstead)
 
 ---
 
