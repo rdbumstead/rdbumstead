@@ -3,9 +3,11 @@
 ### ☁️ Salesforce Platform Architect
 
 **📄 Professional Materials**  
+
 [![PDF Resume](https://img.shields.io/badge/PDF_Resume-ec1c24?logo=adobeacrobatreader&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/pdf/RyanBumstead_Resume.pdf) [![Resume Source](https://img.shields.io/badge/Source_Markdown-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md) [![Portfolio](https://img.shields.io/badge/Portfolio-ryanbumstead.com-4A90E2?logo=googlechrome&logoColor=white)](https://ryanbumstead.com)
 
 **📫 Connect With Me**  
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ryan_Bumstead-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/ryanbumstead) [![Email](https://img.shields.io/badge/Email-ryan@ryanbumstead.com-D14836?logo=gmail&logoColor=white)](mailto:ryan@ryanbumstead.com) [![Trailhead](https://img.shields.io/badge/Trailhead-rbumstead-00A1E0?logo=salesforce&logoColor=white)](https://www.salesforce.com/trailblazer/rbumstead)
 
 ---
@@ -18,7 +20,7 @@ I bridge the gap between executive strategy and enforceable technical architectu
 | :--- | :--- |
 | **☁️ Salesforce** | **Apex** · **LWC** · **Agentforce** · **Flow Builder** |
 | **⚡ Cloud** | **AWS Lambda** · **S3** · **Multi-Cloud Architecture** |
-| **🚀 DevOps** | **GitHub Actions** · **SFDX CLI** · **Docker** · **PMD** |
+| **🚀 DevOps** | **Reusable Workflows** · **GitHub Actions** · **SFDX CLI** · **Docker** |
 | **📐 Architecture** | **OpenAPI 3.0** · **Event-Driven** · **C4 Modeling** |
 
 ### 📐 System Architecture
@@ -93,9 +95,9 @@ graph LR
 [![Build Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/resume-pipeline.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code) [![Import Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/import-resume.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code)
 > *Treating professional career documentation as a software product.*
 
-* **Infrastructure as Code:** An event-driven pipeline that transforms Markdown source into immutable PDF artifacts using GitHub Actions and Docker.
-* **Security First:** Implemented a "Secrets-First" pattern, decoupling PII (Phone/Email) from the codebase using GitHub Secrets.
-* **Automated Quality:** Custom Node.js scripts audit hyperlinks and inject portfolio statistics before compilation.
+* **Infrastructure as Code:** Architected an event-driven pipeline that transforms Markdown source into immutable PDF artifacts.
+* **Security Architecture:** Decoupled PII (Phone/Email) using GitHub Secrets to enable safe public repository visibility.
+* **Automated Governance:** Engineered custom scripts to enforce formatting standards and validate hyperlinks before compilation.
 
 #### [Setup Salesforce CLI Action](https://github.com/rdbumstead/setup-salesforce-action)
 [![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Setup%20Salesforce%20CLI-blue.svg)](https://github.com/marketplace/actions/setup-salesforce-cli)
@@ -107,10 +109,10 @@ graph LR
 
 > *A production-ready GitHub Action for Salesforce CI/CD pipelines.*
 
-* **Performance:** 20-45 second setup with intelligent caching (vs 2-3 min without)
-* **Security:** JWT-based authentication with automatic key cleanup
-* **Flexibility:** Fully optional plugin system - install only what you need
-* **Community Impact:** Published to GitHub Marketplace for the Salesforce ecosystem
+* **Self-Healing Architecture:** Engineered exponential backoff logic for high availability and fault tolerance.
+* **Strict-Mode Governance:** Implemented automated quality gates to enforce enterprise coding standards.
+* **Cross-Platform Design:** Built the foundation for modular reusable workflows supporting Linux and Windows.
+* **Performance:** Intelligent caching strategy reducing setup time by **80%** (20s vs 2m).
 
 ### 📜 Certifications
 * Salesforce Certified Agentforce Specialist
