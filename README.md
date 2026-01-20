@@ -1,6 +1,7 @@
 # Hi, I'm Ryan Bumstead 👋
 
 ### ☁️ Salesforce Platform Architect
+> Building governed, resilient systems with GlassOps and open-source patterns.
 
 **📄 Professional Materials**  
 
@@ -78,6 +79,22 @@ graph LR
 
 ### 📂 Engineering Highlights
 
+#### [GlassOps Governance Protocol](https://github.com/glassops-platform/glassops)
+
+[![Status](https://img.shields.io/badge/Status-In%20Development%20%28Seeking%20Testers%29-blue)](https://github.com/glassops-platform/glassops/blob/main/docs/architecture.md)
+
+> *A governance-first protocol for Salesforce CI/CD that separates policy enforcement from execution.*
+
+> [!TIP]
+> **Check out the [Overview](https://github.com/glassops-platform/glassops/blob/main/docs/overview.md)!**
+
+- **Governance Control Plane:** Designed a system enforcing deployment outcomes independently of tooling.
+- **Policy & Contract Model:** Defined a model that normalizes results across execution engines such as native sf CLI and sfdx-hardis.
+- **Pluggable Adapter Pattern:** Architected a pattern allowing teams to swap execution engines without breaking compliance guarantees.
+- **Deployment Governance:** Formalized concepts including policy resolution, validation gates, and pass or fail arbitration.
+- **Tooling Strategy:** Positioned mature tools like sfdx-hardis as **first-class execution adapters**, not competitors.
+- **System Documentation:** Authored protocol-level architecture documentation treating governance as a system concern rather than a pipeline feature.
+
 #### [Salesforce Platform Architect Portfolio](https://github.com/rdbumstead/salesforce-platform-architect-portfolio)
 [![CI/CD — main](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml) [![PR Validation](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml) [![Cloudflare Worker](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy-worker.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy-worker.yml) [![Daily Org Heartbeat](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml)
 
@@ -126,4 +143,4 @@ graph LR
 
 ---
 
-*Looking for a Salesforce Platform Architect who thinks in systems and delivers with precision? Let's connect above!*
+**Looking for a Salesforce Platform Architect who thinks in systems and delivers with precision? Let's connect above!**
