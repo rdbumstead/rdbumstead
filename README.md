@@ -108,14 +108,24 @@ graph LR
 - **Tooling Strategy:** Positioned mature tools like sfdx-hardis as **first-class execution adapters**, not competitors.
 - **System Documentation:** Authored protocol-level architecture documentation treating governance as a system concern rather than a pipeline feature.
 
->[!IMPORTANT]
-> **Powered By: [GlassOps Runtime](https://github.com/glassops-platform/glassops-runtime)** *The foundational primitive that guarantees a consistent execution environment.*
->
-> [![Verify Primitives](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-primitives.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-primitives.yml)
-> [![Integration Tests](https://github.com/glassops-platform/glassops-runtime/actions/workflows/integration-tests.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/integration-tests.yml)
-> [![Verify Governance](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-governance.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-governance.yml)
-> [![Plugin Whitelist Tests](https://github.com/glassops-platform/glassops-runtime/actions/workflows/plugin-whitelist-test.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/plugin-whitelist-test.yml)
-> [![Verify Auth Contract](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-auth-contract.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-auth-contract.yml)
+#### [GlassOps Runtime](https://github.com/glassops-platform/glassops-runtime)
+
+[![Verify Primitives](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-primitives.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-primitives.yml)
+[![Integration Tests](https://github.com/glassops-platform/glassops-runtime/actions/workflows/integration-tests.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/integration-tests.yml)
+[![Verify Governance](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-governance.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-governance.yml)
+[![Plugin Whitelist Tests](https://github.com/glassops-platform/glassops-runtime/actions/workflows/plugin-whitelist-test.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/plugin-whitelist-test.yml)
+[![Verify Auth Contract](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-auth-contract.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-auth-contract.yml)
+
+> *Production-grade execution infrastructure providing the foundational layer for GlassOps governance.*
+
+- **Verified Primitives:** Engineered comprehensive test coverage ensuring consistent behavior across execution contexts.
+- **Governed Authentication:** Implemented authentication contracts supporting JWT, OAuth, and SFDX Auth URL patterns.
+- **Plugin Security:** Designed whitelist enforcement preventing unauthorized Salesforce CLI extensions.
+- **Governed Execution:** Enforces strict timeouts, validates inputs, and provides structured error handling with clear failure modes.
+- **Infrastructure Guarantees:** Established the foundational layer ensuring deployment outcomes are reproducible and auditable.
+
+> [!NOTE]
+> **Powers the GlassOps Governance Protocol execution layer.** Governance guarantees require infrastructure guarantees.
 
 #### [Salesforce Platform Architect Portfolio](https://github.com/rdbumstead/salesforce-platform-architect-portfolio)
 [![CI/CD — main](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml) [![PR Validation](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml) [![Cloudflare Worker](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy-worker.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy-worker.yml) [![Daily Org Heartbeat](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml)
@@ -126,17 +136,9 @@ graph LR
 > **View the full documentation in the [Governance Hub](https://rdbumstead.github.io/salesforce-platform-architect-portfolio/) for the best reading experience.**
 
 * **The Architecture:** Designed a multi-cloud system using Salesforce LWR, GraphQL, Apex, and AWS Lambda.
-* **The Governance:** Implemented contract-first APIs (OpenAPI 3.0) and "Chaos Engineering" patterns to validate resilience against third-party failures.
+* **The Governance:** Architected contract-first APIs (OpenAPI 3.0) and "Chaos Engineering" patterns to validate resilience against third-party failures.
 * **The Ops:** Zero-touch CI/CD with automated quality gates.
 * **Documentation:** Read my [Architectural Decision Records (ADRs)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/tree/main/docs/adr) to see how I handle security, FinOps, and resilience trade-offs.
-
-#### ["Resume as Code" CI/CD Pipeline](https://github.com/rdbumstead/resume-as-code)
-[![Build Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/resume-pipeline.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code) [![Import Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/import-resume.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code)
-> *Treating professional career documentation as a software product.*
-
-* **Infrastructure as Code:** Architected an event-driven pipeline that transforms Markdown source into immutable PDF artifacts.
-* **Security Architecture:** Decoupled PII (Phone/Email) using GitHub Secrets to enable safe public repository visibility.
-* **Automated Governance:** Engineered custom scripts to enforce formatting standards and validate hyperlinks before compilation.
 
 #### [Setup Salesforce CLI Action](https://github.com/rdbumstead/setup-salesforce-action)
 [![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Setup%20Salesforce%20CLI-blue.svg)](https://github.com/marketplace/actions/setup-salesforce-cli)
@@ -152,6 +154,14 @@ graph LR
 * **Strict-Mode Governance:** Implemented automated quality gates to enforce enterprise coding standards.
 * **Cross-Platform Design:** Built the foundation for modular reusable workflows supporting Linux and Windows.
 * **Performance:** Intelligent caching strategy reducing setup time by **80%** (20s vs 2m).
+
+#### ["Resume as Code" CI/CD Pipeline](https://github.com/rdbumstead/resume-as-code)
+[![Build Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/resume-pipeline.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code) [![Import Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/import-resume.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code)
+> *Treating professional career documentation as a software product.*
+
+* **Infrastructure as Code:** Architected an event-driven pipeline that transforms Markdown source into immutable PDF artifacts.
+* **Security Architecture:** Decoupled PII (Phone/Email) using GitHub Secrets to enable safe public repository visibility.
+* **Automated Governance:** Engineered custom scripts to enforce formatting standards and validate hyperlinks before compilation.
 
 ### 📜 Certifications
 * Salesforce Certified Agentforce Specialist
