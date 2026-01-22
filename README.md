@@ -21,7 +21,7 @@ I bridge the gap between executive strategy and enforceable technical architectu
 | :--- | :--- |
 | **☁️ Salesforce** | **Apex** · **LWC** · **Agentforce** · **Flow Builder** |
 | **⚡ Cloud** | **AWS Lambda** · **S3** · **Multi-Cloud Architecture** |
-| **🚀 DevOps** | **Reusable Workflows** · **GitHub Actions** · **SFDX CLI** · **Docker** |
+| **🚀 DevOps** | **Reusable Workflows** · **GitHub Actions** · **SFDX CLI** |
 | **📐 Architecture** | **OpenAPI 3.0** · **Event-Driven** · **Secure by Design** |
 
 ### 📐 System Architecture
