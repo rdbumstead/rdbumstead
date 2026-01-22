@@ -1,9 +1,9 @@
 # Hi, I'm Ryan Bumstead 👋
 
-### ☁️ Salesforce Platform Architect
-> Building governed, resilient systems with GlassOps and open-source patterns.
+### 🏛️ Salesforce Platform Architect & Governance Lead
+> Specializing in Protocol-First Delivery, DevOps Maturity, and Risk Mitigation.
 
-**📄 Professional Materials**  
+**📄 Professional Materials**
 
 [![PDF Resume](https://img.shields.io/badge/PDF_Resume-ec1c24?logo=adobeacrobatreader&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/pdf/RyanBumstead_Resume.pdf) [![Resume Source](https://img.shields.io/badge/Source_Markdown-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md) [![Portfolio](https://img.shields.io/badge/Portfolio-ryanbumstead.com-4A90E2?logo=googlechrome&logoColor=white)](https://ryanbumstead.com)
 
@@ -22,7 +22,7 @@ I bridge the gap between executive strategy and enforceable technical architectu
 | **☁️ Salesforce** | **Apex** · **LWC** · **Agentforce** · **Flow Builder** |
 | **⚡ Cloud** | **AWS Lambda** · **S3** · **Multi-Cloud Architecture** |
 | **🚀 DevOps** | **Reusable Workflows** · **GitHub Actions** · **SFDX CLI** · **Docker** |
-| **📐 Architecture** | **OpenAPI 3.0** · **Event-Driven** · **C4 Modeling** |
+| **📐 Architecture** | **OpenAPI 3.0** · **Event-Driven** · **Secure by Design** |
 
 ### 📐 System Architecture
 *A high-level view of the multi-cloud pattern used in my reference implementation.*
@@ -48,7 +48,10 @@ graph LR
     AI[Agentforce]
     Jira[Jira Cloud API]
     GitHub[GitHub API]
-    Lambda[AWS Lambda<br/>Phase 8]
+
+    subgraph Roadmap ["Future Roadmap (Phase 2)"]
+        Lambda[AWS Lambda<br/>Offload Compute]
+    end
 
     %% ========= FLOWS =========
     User --> LWR
@@ -81,9 +84,9 @@ graph LR
 
 #### [GlassOps Governance Protocol](https://github.com/glassops-platform/glassops)
 
-[![Status](https://img.shields.io/badge/Status-In%20Development%20%28Seeking%20Testers%29-blue)](https://github.com/glassops-platform/glassops/blob/main/docs/architecture.md)
+[![Status](https://img.shields.io/badge/Status-v1.0--alpha_%28Active_Protocol%29-blue)](https://github.com/glassops-platform/glassops/blob/main/docs/architecture.md)
 
-> *A governance-first protocol for Salesforce CI/CD that separates policy enforcement from execution.*
+> An Open Source (Apache 2.0) Standard for Salesforce DevOps that separates policy enforcement from execution.
 
 > [!TIP]
 > **Check out the [Overview](https://github.com/glassops-platform/glassops/blob/main/docs/overview.md)!**
@@ -94,6 +97,15 @@ graph LR
 - **Deployment Governance:** Formalized concepts including policy resolution, validation gates, and pass or fail arbitration.
 - **Tooling Strategy:** Positioned mature tools like sfdx-hardis as **first-class execution adapters**, not competitors.
 - **System Documentation:** Authored protocol-level architecture documentation treating governance as a system concern rather than a pipeline feature.
+
+>[!IMPORTANT]
+> **Powered By: [GlassOps Runtime](https://github.com/glassops-platform/glassops-runtime)** *The foundational primitive that guarantees a consistent execution environment.*
+>
+> [![Verify Primitives](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-primitives.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-primitives.yml)
+> [![Integration Tests](https://github.com/glassops-platform/glassops-runtime/actions/workflows/integration-tests.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/integration-tests.yml)
+> [![Verify Governance](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-governance.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-governance.yml)
+> [![Plugin Whitelist Tests](https://github.com/glassops-platform/glassops-runtime/actions/workflows/plugin-whitelist-test.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/plugin-whitelist-test.yml)
+> [![Verify Auth Contract](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-auth-contract.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-auth-contract.yml)
 
 #### [Salesforce Platform Architect Portfolio](https://github.com/rdbumstead/salesforce-platform-architect-portfolio)
 [![CI/CD — main](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml) [![PR Validation](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml) [![Cloudflare Worker](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy-worker.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy-worker.yml) [![Daily Org Heartbeat](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml)
@@ -143,4 +155,4 @@ graph LR
 
 ---
 
-**Looking for a Salesforce Platform Architect who thinks in systems and delivers with precision? Let's connect above!**
+**I help enterprise teams move from "fragile features" to "governed systems." Let's secure your platform.**
