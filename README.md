@@ -1,7 +1,7 @@
 # Hi, I'm Ryan Bumstead 👋
 
 ### 🏛️ Salesforce Platform Architect & Governance Lead
-> Specializing in Protocol-First Delivery, DevOps Maturity, and Risk Mitigation.
+> Governance-first CI/CD design & reference implementation
 
 **📄 Resume**
 
