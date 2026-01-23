@@ -7,7 +7,7 @@
 
 [![PDF](https://img.shields.io/badge/PDF-ec1c24?logo=adobeacrobatreader&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/pdf/RyanBumstead_Resume.pdf) [![Markdown](https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md)
 
-**📄 Comprehensive Resume**
+**📄 Looking for deeper technical context: Comprehensive Resume**
 
 [![PDF](https://img.shields.io/badge/PDF-ec1c24?logo=adobeacrobatreader&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/pdf/RyanBumstead_Resume_Comprehensive.pdf) [![Markdown](https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume_Comprehensive.md)
 
@@ -22,8 +22,6 @@
 ---
 
 I bridge the gap between executive strategy and enforceable technical architecture, specializing in **architecture-first delivery**, **DevOps maturity**, and **resilience engineering** for governed, multi-cloud systems (Salesforce + AWS).
-
-> **Looking for deeper technical context?** The [Comprehensive Resume](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume_Comprehensive.md) includes extended architecture documentation, detailed project narratives, and systems thinking examples.
 
 ### 🛠 Tech Stack
 
