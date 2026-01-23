@@ -173,4 +173,4 @@ graph LR
 
 ---
 
-**I help enterprise teams move from "fragile features" to "governed systems." Let's secure your platform.**
+**I help enterprise teams design the path from "fragile features" to "governed systems.**
