@@ -1,7 +1,7 @@
 # Hi, I'm Ryan Bumstead 👋
 
 ### 🏛️ Salesforce Platform Architect & Governance Lead
-> Governance-first CI/CD design & reference implementation
+> Governance-first CI/CD design & reference implementation (in active development)
 
 **📄 Resume**
 
@@ -101,7 +101,7 @@ graph LR
 > [!TIP]
 > **Check out the [Overview](https://github.com/glassops-platform/glassops/blob/main/docs/overview.md)!**
 
-- **Governance Control Plane:** Designed a system enforcing deployment outcomes independently of tooling.
+- **Governance Control Plane:** Designed a system intended to enforce deployment outcomes independently of tooling.
 - **Policy & Contract Model:** Defined a model that normalizes results across execution engines such as native sf CLI and sfdx-hardis.
 - **Pluggable Adapter Pattern:** Architected a pattern allowing teams to swap execution engines without breaking compliance guarantees.
 - **Deployment Governance:** Formalized concepts including policy resolution, validation gates, and pass or fail arbitration.
@@ -116,7 +116,7 @@ graph LR
 [![Plugin Whitelist Tests](https://github.com/glassops-platform/glassops-runtime/actions/workflows/plugin-whitelist-test.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/plugin-whitelist-test.yml)
 [![Verify Auth Contract](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-auth-contract.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-auth-contract.yml)
 
-> *Production-grade execution infrastructure providing the foundational layer for GlassOps governance.*
+> *Production-grade execution infrastructure designed to provide the foundational layer for GlassOps governance.*
 
 - **Verified Primitives:** Engineered comprehensive test coverage ensuring consistent behavior across execution contexts.
 - **Governed Authentication:** Implemented authentication contracts supporting JWT, OAuth, and SFDX Auth URL patterns.
