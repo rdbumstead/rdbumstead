@@ -5,11 +5,11 @@
 
 **📄 Resume**
 
-[![PDF](https://img.shields.io/badge/PDF-ec1c24?logo=adobeacrobatreader&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/pdf/RyanBumstead_Resume.pdf) [![Markdown](https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md)
+[![PDF](https://img.shields.io/badge/PDF-Download-blue?logo=adobeacrobatreader&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_Resume.pdf) [![Markdown](https://img.shields.io/badge/Markdown-Source-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md) [![Markdown](https://img.shields.io/badge/Markdown-Source-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md) [![Markdown](https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md)
 
 **📄 Looking for deeper technical context: Comprehensive Resume**
 
-[![PDF](https://img.shields.io/badge/PDF-ec1c24?logo=adobeacrobatreader&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/pdf/RyanBumstead_Resume_Comprehensive.pdf) [![Markdown](https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume_Comprehensive.md)
+[![PDF](https://img.shields.io/badge/PDF-Download-blue?logo=adobeacrobatreader&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_Resume_Comprehensive.pdf) [![Markdown](https://img.shields.io/badge/Markdown-Source-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume_Comprehensive.md) [![Markdown](https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume_Comprehensive.md)
 
 **🌐 Portfolio**
 
