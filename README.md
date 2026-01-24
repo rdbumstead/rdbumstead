@@ -160,7 +160,7 @@ graph LR
 * **Performance:** Intelligent caching strategy reducing setup time by **80%** (20s vs 2m).
 
 #### ["Resume as Code" CI/CD Pipeline](https://github.com/rdbumstead/resume-as-code)
-[![Build Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/resume-pipeline.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code) [![Import Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/import-resume.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code)
+[![Build Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/resume-pipeline.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code)
 > *Treating professional career documentation as a software product.*
 
 * **Infrastructure as Code:** Architected an event-driven pipeline that transforms Markdown source into immutable PDF artifacts.
