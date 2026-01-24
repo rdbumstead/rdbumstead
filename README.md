@@ -1,15 +1,21 @@
-# Hi, I'm Ryan Bumstead 👋
+Hi, I'm Ryan Bumstead 👋
 
 ### 🏛️ Salesforce Platform Architect & Governance Lead
 > Governance-first CI/CD design & reference implementation (in active development)
 
-**📄 Resume**
+---
 
-[![PDF](https://img.shields.io/badge/PDF-Download-blue?logo=adobeacrobatreader&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_Resume.pdf) [![Markdown](https://img.shields.io/badge/Markdown-Source-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md) [![Markdown](https://img.shields.io/badge/Markdown-Source-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md) [![Markdown](https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md)
+### 📄 Resumes & Documentation
 
-**📄 Looking for deeper technical context: Comprehensive Resume**
+> *Note: PDFs are generated as secure release artifacts to protect PII. Click the badge to download the latest build.*
 
-[![PDF](https://img.shields.io/badge/PDF-Download-blue?logo=adobeacrobatreader&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_Resume_Comprehensive.pdf) [![Markdown](https://img.shields.io/badge/Markdown-Source-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume_Comprehensive.md) [![Markdown](https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume_Comprehensive.md)
+**Standard Resume**
+
+[![PDF](https://img.shields.io/badge/PDF-Download_Latest_Release-blue?logo=githubactions&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_Resume.pdf) [![Markdown](https://img.shields.io/badge/Markdown-View_Source_Code-black?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md)
+
+**Comprehensive Resume** *(Technical Deep Dive)*
+
+[![PDF](https://img.shields.io/badge/PDF-Download_Latest_Release-blue?logo=githubactions&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_Resume_Comprehensive.pdf) [![Markdown](https://img.shields.io/badge/Markdown-View_Source_Code-black?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume_Comprehensive.md)
 
 **🌐 Portfolio**
 
