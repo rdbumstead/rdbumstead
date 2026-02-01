@@ -7,7 +7,8 @@ Hi, I'm Ryan Bumstead 👋
 
 ### Resumes & Documentation
 
-> *Note: PDFs are generated as secure release artifacts to protect PII. Click the badge to download the latest build.*
+> [!NOTE]
+> PDFs are generated as secure release artifacts to protect PII. Click the badge to download the latest build.*
 
 **Standard Resume**
 
