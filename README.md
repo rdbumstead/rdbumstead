@@ -13,6 +13,10 @@ Hi, I'm Ryan Bumstead 👋
 
 [![PDF](https://img.shields.io/badge/PDF-Download_Latest_Release-blue?logo=githubactions&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_Resume.pdf) [![Markdown](https://img.shields.io/badge/Markdown-View_Source_Code-black?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md)
 
+**Platform Engineer Resume**
+
+[![PDF](https://img.shields.io/badge/PDF-Download_Latest_Release-blue?logo=githubactions&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_PlatformEngineer.pdf) [![Markdown](https://img.shields.io/badge/Markdown-View_Source_Code-black?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_PlatformEngineer.md)
+
 **Comprehensive Resume** *(Technical Deep Dive)*
 
 [![PDF](https://img.shields.io/badge/PDF-Download_Latest_Release-blue?logo=githubactions&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_Resume_Comprehensive.pdf) [![Markdown](https://img.shields.io/badge/Markdown-View_Source_Code-black?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume_Comprehensive.md)
@@ -27,7 +31,12 @@ Hi, I'm Ryan Bumstead 👋
 
 ---
 
-I bridge the gap between executive strategy and enforceable technical architecture, specializing in **architecture-first delivery**, **DevOps maturity**, and **resilience engineering** for governed, multi-cloud systems (Salesforce + AWS).
+I design Salesforce platforms that balance **developer velocity** with **system integrity**, specializing in **multi-org architecture**, **DevOps governance**, and **governance-first deployment models** for higher education and nonprofit environments.
+
+**Core Focus Areas:**
+- Architecture-first delivery
+- Governance-driven DevOps  
+- Resilient multi-cloud systems (Salesforce + AWS)
 
 ### 🛠 Tech Stack
 
@@ -35,8 +44,9 @@ I bridge the gap between executive strategy and enforceable technical architectu
 | :--- | :--- |
 | **☁️ Salesforce** | **Apex** · **LWC** · **Agentforce** · **Flow Builder** |
 | **⚡ Cloud** | **AWS Lambda** · **S3** · **Multi-Cloud Architecture** |
-| **🚀 DevOps** | **Reusable Workflows** · **GitHub Actions** · **SFDX CLI** |
+| **🚀 DevOps** | **Reusable Workflows** · **GitHub Actions** · **SFDX CLI** · **Docker** |
 | **📐 Architecture** | **OpenAPI 3.0** · **Event-Driven** · **Secure by Design** |
+| **🔧 Languages & Tools** | **Go** · **Python** · **TypeScript** · **JavaScript** · **YAML** · **Pandoc** · **XeLaTeX** · **Mermaid.js** |
 
 ### 📐 System Architecture
 *A high-level view of the multi-cloud pattern used in my reference implementation.*
@@ -163,20 +173,21 @@ graph LR
 [![Build Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/resume-pipeline.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code)
 > *Treating professional career documentation as a software product.*
 
-* **Infrastructure as Code:** Architected an event-driven pipeline that transforms Markdown source into immutable PDF artifacts.
-* **Security Architecture:** Decoupled PII (Phone/Email) using GitHub Secrets to enable safe public repository visibility.
-* **Automated Governance:** Engineered custom scripts to enforce formatting standards and validate hyperlinks before compilation.
+* **Security-First Architecture:** Engineered custom Node.js assembly engine that dynamically injects job titles ("Golden Headers") and PII at runtime using GitHub Secrets.
+* **Governance Pipeline:** Automated validation for formatting standards and hyperlink integrity before compilation.
+* **High-Fidelity Compilation:** Orchestrated PDF generation using Pandoc and XeLaTeX for pixel-perfect rendering.
+* **Decoupled Architecture:** Separated public source code (Markdown) from private contact information in compiled artifacts.
 
 ### 📜 Certifications
 * Salesforce Certified Agentforce Specialist
 * Salesforce Certified Data Cloud Consultant
 * Salesforce Certified Education Cloud Consultant
 * Salesforce Certified Platform App Builder
-* Salesforce Certified Platform Administrator
-* Salesforce Certified Platform Administrator II
+* Salesforce Certified Platform Administrator I & II
+* MuleSoft Certified Developer – Level 1 (DEX-401)
 
 [Verify these credentials on Trailhead ↗](https://www.salesforce.com/trailblazer/rbumstead)
 
 ---
 
-**I help enterprise teams design the path from "fragile features" to "governed systems.**
+**I help organizations evolve from "fragile features" to resilient, governed ecosystems.**
