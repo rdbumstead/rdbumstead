@@ -168,6 +168,7 @@ graph LR
 
 #### ["Resume as Code" CI/CD Pipeline](https://github.com/rdbumstead/resume-as-code)
 [![Build Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/resume-pipeline.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code)
+![Font Test Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/test-font-install.yml/badge.svg)
 > *Treating professional career documentation as a software product.*
 
 * **Security-First Architecture:** Engineered custom Node.js assembly engine that dynamically injects job titles ("Golden Headers") and PII at runtime using GitHub Secrets.
