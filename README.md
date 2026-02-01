@@ -1,4 +1,4 @@
-Hi, I'm Ryan Bumstead 👋
+Hi, I'm Ryan Bumstead
 
 ### Salesforce Platform Architect & Governance Lead
 > Governance-first CI/CD design & reference implementation (in active development)
