@@ -8,19 +8,32 @@ Hi, I'm Ryan Bumstead
 ### Resumes & Documentation
 
 > [!NOTE]
-> PDFs are generated as secure release artifacts to protect PII. Click the badge to download the latest build.*
+> PDFs are generated as secure release artifacts to protect PII. Click the badge to download the latest build.
 
 **Standard Resume**
 
 [![PDF](https://img.shields.io/badge/PDF-Download_Latest_Release-blue?logo=githubactions&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_Resume.pdf) [![Markdown](https://img.shields.io/badge/Markdown-View_Source_Code-black?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume.md)
 
+**Comprehensive Resume** *(Technical Deep Dive)*
+
+[![PDF](https://img.shields.io/badge/PDF-Download_Latest_Release-blue?logo=githubactions&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_Resume_Comprehensive.pdf) [![Markdown](https://img.shields.io/badge/Markdown-View_Source_Code-black?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume_Comprehensive.md)
+
+<details>
+<summary>Additional Resume Versions (Platform Engineer, Recruiter/ATS, UX-Focused)</summary>
+
 **Platform Engineer Resume**
 
 [![PDF](https://img.shields.io/badge/PDF-Download_Latest_Release-blue?logo=githubactions&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_PlatformEngineer.pdf) [![Markdown](https://img.shields.io/badge/Markdown-View_Source_Code-black?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_PlatformEngineer.md)
 
-**Comprehensive Resume** *(Technical Deep Dive)*
+**Recruiter/ATS Optimized Resume**
 
-[![PDF](https://img.shields.io/badge/PDF-Download_Latest_Release-blue?logo=githubactions&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_Resume_Comprehensive.pdf) [![Markdown](https://img.shields.io/badge/Markdown-View_Source_Code-black?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume_Comprehensive.md)
+[![PDF](https://img.shields.io/badge/PDF-Download_Latest_Release-blue?logo=githubactions&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_Resume_Recruiter.pdf) [![Markdown](https://img.shields.io/badge/Markdown-View_Source_Code-black?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume_Recruiter.md)
+
+**UX-Focused Resume**
+
+[![PDF](https://img.shields.io/badge/PDF-Download_Latest_Release-blue?logo=githubactions&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_Resume_UX.pdf) [![Markdown](https://img.shields.io/badge/Markdown-View_Source_Code-black?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume_UX.md)
+
+</details>
 
 **Connect With Me**  
 
@@ -45,8 +58,12 @@ I design Salesforce platforms that balance **developer velocity** with **system 
 | **Architecture** | **OpenAPI 3.0** · **Event-Driven** · **Secure by Design** |
 | **Languages & Tools** | **Go** · **Python** · **TypeScript** · **JavaScript** · **YAML** · **Pandoc** · **XeLaTeX** · **Mermaid.js** |
 
-### System Architecture
-*A high-level view of the multi-cloud pattern used in my reference implementation.*
+---
+
+### Platform Architecture
+
+**Salesforce Platform Architect Portfolio**  
+*Multi-cloud pattern using Salesforce LWR, GraphQL, Apex, and AWS Lambda.*
 
 ```mermaid
 graph LR
@@ -98,6 +115,94 @@ graph LR
     %% ========= CRITICAL PATH =========
     linkStyle 0,1,2 stroke:#2ECC71,stroke-width:3px;
 ```
+
+<details>
+<summary>Additional Architecture Diagrams</summary>
+
+### GlassOps Governance Protocol Flow
+*Control plane architecture separating governance from execution.*
+
+```mermaid
+flowchart LR
+    %% ========= STANDARD STYLES =========
+    classDef actor fill:#424242,stroke:#000000,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef policy fill:#8E24AA,stroke:#4A148C,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef action fill:#00A1E0,stroke:#005FB2,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef gate fill:#FB8C00,stroke:#E65100,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef record fill:#24292E,stroke:#000000,stroke-width:2px,color:#ffffff,font-weight:bold;
+
+    %% ========= NODES =========
+    Intent[User Intent]
+    Policy[Policy Resolution]
+    Adapter[Execution Adapter]
+    Contract[Deployment Contract]
+    Enforce[Governance Enforcement]
+    Audit[Audit Trail]
+
+    %% ========= FLOWS =========
+    Intent --> Policy
+    Policy --> Adapter
+    Adapter --> Contract
+    Contract --> Enforce
+    Enforce --> Audit
+
+    %% ========= APPLY STYLES =========
+    class Intent actor;
+    class Policy policy;
+    class Adapter action;
+    class Enforce gate;
+    class Contract,Audit record;
+```
+
+### Resume as Code Architecture
+*Security-first CI/CD pipeline for professional documentation.*
+
+```mermaid
+flowchart LR
+    %% ========= STYLES =========
+    classDef source fill:#00A1E0,stroke:#005FB2,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef engine fill:#2ECC71,stroke:#27AE60,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef secure fill:#FB8C00,stroke:#E65100,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef artifact fill:#8E24AA,stroke:#4A148C,stroke-width:2px,color:#ffffff,font-weight:bold;
+
+    subgraph Inputs ["Source Control"]
+        direction TB
+        MD["Source Markdown<br/>(No PII / Redacted)"]
+        Config["resume.config.json"]
+    end
+
+    subgraph Security ["Security Layer"]
+        Secrets[("GitHub Secrets<br/>(Phone, Email)")]
+    end
+
+    subgraph Build ["Governance Engine"]
+        Assemble["assemble.js<br/>(Inject 'Golden Header' & PII)"]
+        Pandoc["Pandoc / XeLaTeX<br/>(PDF Compilation)"]
+    end
+
+    subgraph Output ["Artifacts"]
+        direction TB
+        PDF["Release Artifact<br/>(Enriched with PII)"]
+        Safe["Safe Mode MD<br/>(Public Web View)"]
+    end
+
+    %% ========= FLOWS =========
+    MD --> Assemble
+    Config --> Assemble
+    Secrets -.->|Runtime Injection| Assemble
+
+    Assemble --> Pandoc
+    Pandoc --> PDF
+    Assemble -->|Redacted| Safe
+
+    %% ========= APPLY STYLES =========
+    class MD,Config source;
+    class Secrets secure;
+    class Assemble,Pandoc engine;
+    class PDF,Safe artifact;
+```
+
+</details>
 
 ---
 
@@ -161,20 +266,17 @@ graph LR
 
 > *A production-ready GitHub Action for Salesforce CI/CD pipelines.*
 
-* **Self-Healing Architecture:** Engineered exponential backoff logic for high availability and fault tolerance.
-* **Strict-Mode Governance:** Implemented automated quality gates to enforce enterprise coding standards.
-* **Cross-Platform Design:** Built the foundation for modular reusable workflows supporting Linux and Windows.
-* **Performance:** Intelligent caching strategy reducing setup time by **80%** (20s vs 2m).
+* **Enterprise-Grade Action:** Built GitHub Action for strictly version-pinned Salesforce CLI environments.
+* **Intelligent Caching:** Implemented fault-tolerant execution to reduce setup time by ~80%.
 
 #### ["Resume as Code" CI/CD Pipeline](https://github.com/rdbumstead/resume-as-code)
 [![Build Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/resume-pipeline.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code)
-![Font Test Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/test-font-install.yml/badge.svg)
+[![Font Test Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/test-font-install.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code/actions/workflows/test-font-install.yml)
 > *Treating professional career documentation as a software product.*
 
-* **Security-First Architecture:** Engineered custom Node.js assembly engine that dynamically injects job titles ("Golden Headers") and PII at runtime using GitHub Secrets.
-* **Governance Pipeline:** Automated validation for formatting standards and hyperlink integrity before compilation.
-* **High-Fidelity Compilation:** Orchestrated PDF generation using Pandoc and XeLaTeX for pixel-perfect rendering.
-* **Decoupled Architecture:** Separated public source code (Markdown) from private contact information in compiled artifacts.
+* **Custom Assembly Engine:** Engineered Node.js engine that dynamically injects job titles ("Golden Headers") and PII at runtime.
+* **Secure Secret Injection:** Implemented GitHub Secrets to separate public source code from private contact information in compiled artifacts.
+* **High-Fidelity Compilation:** Orchestrated PDF generation using Pandoc and XeLaTeX.
 
 ### Certifications
 * Salesforce Certified Agentforce Specialist
@@ -184,6 +286,9 @@ graph LR
 * Salesforce Certified Platform Administrator I & II
 
 [Verify these credentials on Trailhead ↗](https://www.salesforce.com/trailblazer/rbumstead)
+
+### Courses
+* MuleSoft DEX-401: Essentials of Anypoint Platform Development
 
 ---
 
