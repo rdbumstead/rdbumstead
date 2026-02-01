@@ -116,22 +116,11 @@ graph LR
     linkStyle 0,1,2 stroke:#2ECC71,stroke-width:3px;
 ```
 
-<details>
-<summary>Additional Architecture Diagrams</summary>
-
 ### GlassOps Governance Protocol Flow
 *Control plane architecture separating governance from execution.*
 
 ```mermaid
 flowchart LR
-    %% ========= STANDARD STYLES =========
-    classDef actor fill:#424242,stroke:#000000,stroke-width:2px,color:#ffffff,font-weight:bold;
-    classDef policy fill:#8E24AA,stroke:#4A148C,stroke-width:2px,color:#ffffff,font-weight:bold;
-    classDef action fill:#00A1E0,stroke:#005FB2,stroke-width:2px,color:#ffffff,font-weight:bold;
-    classDef gate fill:#FB8C00,stroke:#E65100,stroke-width:2px,color:#ffffff,font-weight:bold;
-    classDef record fill:#24292E,stroke:#000000,stroke-width:2px,color:#ffffff,font-weight:bold;
-
-    %% ========= NODES =========
     Intent[User Intent]
     Policy[Policy Resolution]
     Adapter[Execution Adapter]
@@ -139,19 +128,23 @@ flowchart LR
     Enforce[Governance Enforcement]
     Audit[Audit Trail]
 
-    %% ========= FLOWS =========
     Intent --> Policy
     Policy --> Adapter
     Adapter --> Contract
     Contract --> Enforce
     Enforce --> Audit
 
-    %% ========= APPLY STYLES =========
-    class Intent actor;
-    class Policy policy;
-    class Adapter action;
-    class Enforce gate;
-    class Contract,Audit record;
+    classDef actor fill:#424242,stroke:#000000,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef policy fill:#8E24AA,stroke:#4A148C,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef action fill:#00A1E0,stroke:#005FB2,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef gate fill:#FB8C00,stroke:#E65100,stroke-width:2px,color:#ffffff,font-weight:bold
+    classDef record fill:#24292E,stroke:#000000,stroke-width:2px,color:#ffffff,font-weight:bold
+
+    class Intent actor
+    class Policy policy
+    class Adapter action
+    class Enforce gate
+    class Contract,Audit record
 ```
 
 ### Resume as Code Architecture
@@ -201,8 +194,6 @@ flowchart LR
     class Assemble,Pandoc engine;
     class PDF,Safe artifact;
 ```
-
-</details>
 
 ---
 
