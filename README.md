@@ -110,7 +110,7 @@ graph LR
 > An Open Source (Apache 2.0) Standard for Salesforce DevOps that separates policy enforcement from execution.
 
 > [!TIP]
-> **Check out the [Overview](https://github.com/glassops-platform/glassops/blob/main/docs/overview.md)!**
+> **Check out the [Overview](https://github.com/glassops-platform/glassops/blob/main/docs/architecture/overview.md)!**
 
 - **Governance Control Plane:** Designed a system intended to enforce deployment outcomes independently of tooling.
 - **Policy & Contract Model:** Defined a model that normalizes results across execution engines such as native sf CLI and sfdx-hardis.
