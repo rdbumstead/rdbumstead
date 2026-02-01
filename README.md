@@ -21,11 +21,7 @@ Hi, I'm Ryan Bumstead 👋
 
 [![PDF](https://img.shields.io/badge/PDF-Download_Latest_Release-blue?logo=githubactions&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_Resume_Comprehensive.pdf) [![Markdown](https://img.shields.io/badge/Markdown-View_Source_Code-black?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume_Comprehensive.md)
 
-**🌐 Portfolio**
-
-[![ryanbumstead.com](https://img.shields.io/badge/ryanbumstead.com-4A90E2?logo=googlechrome&logoColor=white)](https://ryanbumstead.com)
-
-**📫 Connect With Me**  
+**Connect With Me**  
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/ryanbumstead) [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ryan@ryanbumstead.com) [![Trailhead](https://img.shields.io/badge/Trailhead-00A1E0?logo=salesforce&logoColor=white)](https://www.salesforce.com/trailblazer/rbumstead)
 
@@ -38,17 +34,17 @@ I design Salesforce platforms that balance **developer velocity** with **system 
 - Governance-driven DevOps  
 - Resilient multi-cloud systems (Salesforce + AWS)
 
-### 🛠 Tech Stack
+### Tech Stack
 
 | Domain | Stack |
 | :--- | :--- |
-| **☁️ Salesforce** | **Apex** · **LWC** · **Agentforce** · **Flow Builder** |
-| **⚡ Cloud** | **AWS Lambda** · **S3** · **Multi-Cloud Architecture** |
-| **🚀 DevOps** | **Reusable Workflows** · **GitHub Actions** · **SFDX CLI** · **Docker** |
-| **📐 Architecture** | **OpenAPI 3.0** · **Event-Driven** · **Secure by Design** |
-| **🔧 Languages & Tools** | **Go** · **Python** · **TypeScript** · **JavaScript** · **YAML** · **Pandoc** · **XeLaTeX** · **Mermaid.js** |
+| **Salesforce** | **Apex** · **LWC** · **Agentforce** · **Flow Builder** |
+| **Cloud** | **AWS Lambda** · **S3** · **Multi-Cloud Architecture** |
+| **DevOps** | **Reusable Workflows** · **GitHub Actions** · **SFDX CLI** · **Docker** |
+| **Architecture** | **OpenAPI 3.0** · **Event-Driven** · **Secure by Design** |
+| **Languages & Tools** | **Go** · **Python** · **TypeScript** · **JavaScript** · **YAML** · **Pandoc** · **XeLaTeX** · **Mermaid.js** |
 
-### 📐 System Architecture
+### System Architecture
 *A high-level view of the multi-cloud pattern used in my reference implementation.*
 
 ```mermaid
@@ -104,7 +100,7 @@ graph LR
 
 ---
 
-### 📂 Engineering Highlights
+### Engineering Highlights
 
 #### [GlassOps Governance Protocol](https://github.com/glassops-platform/glassops)
 
@@ -178,7 +174,7 @@ graph LR
 * **High-Fidelity Compilation:** Orchestrated PDF generation using Pandoc and XeLaTeX for pixel-perfect rendering.
 * **Decoupled Architecture:** Separated public source code (Markdown) from private contact information in compiled artifacts.
 
-### 📜 Certifications
+### Certifications
 * Salesforce Certified Agentforce Specialist
 * Salesforce Certified Data Cloud Consultant
 * Salesforce Certified Education Cloud Consultant
