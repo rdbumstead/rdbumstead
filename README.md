@@ -184,7 +184,6 @@ graph LR
 * Salesforce Certified Education Cloud Consultant
 * Salesforce Certified Platform App Builder
 * Salesforce Certified Platform Administrator I & II
-* MuleSoft Certified Developer – Level 1 (DEX-401)
 
 [Verify these credentials on Trailhead ↗](https://www.salesforce.com/trailblazer/rbumstead)
 
