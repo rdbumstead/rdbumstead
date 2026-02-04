@@ -201,7 +201,11 @@ flowchart LR
 
 #### [GlassOps Governance Protocol](https://github.com/glassops-platform/glassops)
 
-[![Status](https://img.shields.io/badge/Status-v1.0--alpha_%28Active_Protocol%29-blue)](https://github.com/glassops-platform/glassops/blob/main/docs/architecture.md)
+[![Runtime Build & Test](https://github.com/glassops-platform/glassops/actions/workflows/runtime-docker.yml/badge.svg)](https://github.com/glassops-platform/glassops/actions/workflows/runtime-docker.yml)
+[![Docs Generation & Sync](https://github.com/glassops-platform/glassops/actions/workflows/docs.yml/badge.svg)](https://github.com/glassops-platform/glassops/actions/workflows/docs.yml)
+[![Docs Governance & Build](https://github.com/glassops-platform/glassops/actions/workflows/docs-governance-deploy.yml/badge.svg)](https://github.com/glassops-platform/glassops/actions/workflows/docs-governance-deploy.yml)
+[![Pages Deployment](https://github.com/glassops-platform/glassops/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/glassops-platform/glassops/actions/workflows/pages/pages-build-deployment)
+[![Docs Bot](https://github.com/glassops-platform/glassops/actions/workflows/docs-bot.yml/badge.svg)](https://github.com/glassops-platform/glassops/actions/workflows/docs-bot.yml)
 
 > An Open Source (Apache 2.0) Standard for Salesforce DevOps that separates policy enforcement from execution.
 
