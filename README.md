@@ -1,7 +1,7 @@
 # Hi, I'm Ryan Bumstead
 
-### Salesforce Platform Architect & Governance Lead
-> Governance-first CI/CD design & reference implementation (in active development)
+### Senior Solutions Consultant at TELUS Digital | Education Cloud Architecture | Governance-First DevOps
+> Architecting Salesforce solutions for higher education institutions and building the governance infrastructure that makes them last.
 
 ---
 
@@ -35,24 +35,26 @@
 
 </details>
 
-**Connect With Me**  
+**Connect With Me**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/ryanbumstead) [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ryan@ryanbumstead.com) [![Trailhead](https://img.shields.io/badge/Trailhead-00A1E0?logo=salesforce&logoColor=white)](https://www.salesforce.com/trailblazer/rbumstead)
 
 ---
 
-I design Salesforce platforms that balance **developer velocity** with **system integrity**, specializing in **multi-org architecture**, **DevOps governance**, and **governance-first deployment models** for higher education and nonprofit environments.
+I guide discovery, architecture, and implementation for Education Cloud engagements at [TELUS Digital](https://www.telusdigital.com/), a Salesforce Summit Partner. My work spans the full student lifecycle including admissions, advising, and student success, with a practitioner foundation built across nearly a decade at higher education institutions.
+
+Outside of client delivery, I build governance infrastructure for Salesforce development teams: tools, protocols, and reference architectures that enforce deployment integrity as a system property rather than a process hope.
 
 **Core Focus Areas:**
-- Architecture-first delivery
-- Governance-driven DevOps  
+- Education Cloud architecture and student lifecycle design
+- Governance-driven DevOps and deployment integrity
 - Resilient multi-cloud systems (Salesforce + AWS)
 
 ### Tech Stack
 
 | Domain | Stack |
 | :--- | :--- |
-| **Salesforce** | **Apex** · **LWC** · **Agentforce** · **Flow Builder** |
+| **Salesforce** | **Apex** · **LWC** · **Agentforce** · **Flow Builder** · **Experience Cloud** · **Education Cloud** |
 | **Cloud** | **AWS Lambda** · **S3** · **Multi-Cloud Architecture** |
 | **DevOps** | **Reusable Workflows** · **GitHub Actions** · **SFDX CLI** · **Docker** |
 | **Architecture** | **OpenAPI 3.0** · **Event-Driven** · **Secure by Design** |
@@ -62,7 +64,7 @@ I design Salesforce platforms that balance **developer velocity** with **system 
 
 ### Platform Architecture
 
-**Salesforce Platform Architect Portfolio**  
+**Salesforce Platform Architect Portfolio**
 *Multi-cloud pattern using Salesforce LWR, GraphQL, Apex, and AWS Lambda.*
 
 ```mermaid
@@ -239,7 +241,7 @@ flowchart LR
 > **Powers the GlassOps Governance Protocol execution layer.** Governance guarantees require infrastructure guarantees.
 
 #### [Salesforce Platform Architect Portfolio](https://github.com/rdbumstead/salesforce-platform-architect-portfolio)
-[![CI/CD — main](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml) [![PR Validation](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml) [![Cloudflare Worker](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy-worker.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy-worker.yml) [![Daily Org Heartbeat](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml)
+[![CI/CD - main](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml) [![PR Validation](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml) [![Cloudflare Worker](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy-worker.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy-worker.yml) [![Daily Org Heartbeat](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml)
 
 > *An open-source reference implementation for enterprise delivery patterns.*
 
@@ -273,12 +275,18 @@ flowchart LR
 * **Secure Secret Injection:** Implemented GitHub Secrets to separate public source code from private contact information in compiled artifacts.
 * **High-Fidelity Compilation:** Orchestrated PDF generation using Pandoc and XeLaTeX.
 
+---
+
 ### Certifications
-* Salesforce Certified Agentforce Specialist
-* Salesforce Certified Data Cloud Consultant
-* Salesforce Certified Education Cloud Consultant
-* Salesforce Certified Platform App Builder
-* Salesforce Certified Platform Administrator I & II
+
+* Salesforce Certified Education Cloud Consultant (Mar 2025)
+* Salesforce Certified Data 360 Consultant (Mar 2025)
+* Salesforce Certified Agentforce Specialist (Jan 2025)
+* Salesforce Certified Marketing Cloud Engagement Foundations (Jan 2025)
+* Salesforce Certified AI Associate (Jul 2024)
+* Salesforce Certified Platform App Builder (Sep 2024)
+* Salesforce Certified Platform Administrator II (Jul 2024)
+* Salesforce Certified Platform Administrator (Jun 2024)
 
 [Verify these credentials on Trailhead ↗](https://www.salesforce.com/trailblazer/rbumstead)
 
@@ -287,4 +295,4 @@ flowchart LR
 
 ---
 
-**I help organizations evolve from "fragile features" to resilient, governed ecosystems.**
+**I help organizations evolve from fragile features to resilient, governed ecosystems.**
