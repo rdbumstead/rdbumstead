@@ -3,12 +3,21 @@
 ### Senior Solutions Consultant at TELUS Digital | Education Cloud Architecture | Governance-First DevOps
 > Architecting Salesforce solutions for higher education institutions and building the governance infrastructure that makes them last.
 
+[![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-ryanbumstead.com-0176D3?logo=salesforce&logoColor=white)](https://ryanbumstead.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/ryanbumstead) [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ryan@ryanbumstead.com) [![Trailhead](https://img.shields.io/badge/Trailhead-00A1E0?logo=salesforce&logoColor=white)](https://www.salesforce.com/trailblazer/rbumstead)
+
 ---
 
-### Resumes & Documentation
+### Resumes
+
+**Build one on the live site.** Pick a persona on [ryanbumstead.com/resume](https://ryanbumstead.com/resume) and the skills follow it. The PDF you download matches the preview and comes from the same Salesforce records the site reads.
+
+[![Resume Builder](https://img.shields.io/badge/Resume_Builder-Open_on_the_Live_Site-0176D3?logo=salesforce&logoColor=white)](https://ryanbumstead.com/resume)
+
+<details>
+<summary>PDF builds from Resume as Code</summary>
 
 > [!NOTE]
-> PDFs are generated as secure release artifacts to protect PII. Click the badge to download the latest build.
+> PDFs are generated as release artifacts so contact details never sit in the source. Click a badge to download the latest build.
 
 **Standard Resume**
 
@@ -17,9 +26,6 @@
 **Comprehensive Resume** *(Technical Deep Dive)*
 
 [![PDF](https://img.shields.io/badge/PDF-Download_Latest_Release-blue?logo=githubactions&logoColor=white)](https://github.com/rdbumstead/resume-as-code/releases/download/latest/RyanBumstead_Resume_Comprehensive.pdf) [![Markdown](https://img.shields.io/badge/Markdown-View_Source_Code-black?logo=markdown&logoColor=white)](https://github.com/rdbumstead/resume-as-code/blob/main/markdown/RyanBumstead_Resume_Comprehensive.md)
-
-<details>
-<summary>Additional Resume Versions (Platform Engineer, Recruiter/ATS, UX-Focused)</summary>
 
 **Platform Engineer Resume**
 
@@ -35,10 +41,6 @@
 
 </details>
 
-**Connect With Me**
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/ryanbumstead) [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ryan@ryanbumstead.com) [![Trailhead](https://img.shields.io/badge/Trailhead-00A1E0?logo=salesforce&logoColor=white)](https://www.salesforce.com/trailblazer/rbumstead)
-
 ---
 
 I guide discovery, architecture, and implementation for Education Cloud engagements at [TELUS Digital](https://www.telusdigital.com/), a Salesforce Summit Partner. My work spans the full student lifecycle including admissions, advising, and student success, with a practitioner foundation built across nearly a decade at higher education institutions.
@@ -48,24 +50,36 @@ Outside of client delivery, I build governance infrastructure for Salesforce dev
 **Core Focus Areas:**
 - Education Cloud architecture and student lifecycle design
 - Governance-driven DevOps and deployment integrity
-- Resilient multi-cloud systems (Salesforce + AWS)
+- Contract-first APIs and integrations that keep working when a dependency fails
 
 ### Tech Stack
 
 | Domain | Stack |
 | :--- | :--- |
-| **Salesforce** | **Apex** · **LWC** · **Agentforce** · **Flow Builder** · **Experience Cloud** · **Education Cloud** |
-| **Cloud** | **AWS Lambda** · **S3** · **Multi-Cloud Architecture** |
-| **DevOps** | **Reusable Workflows** · **GitHub Actions** · **SFDX CLI** · **Docker** |
-| **Architecture** | **OpenAPI 3.0** · **Event-Driven** · **Secure by Design** |
-| **Languages & Tools** | **Go** · **Python** · **TypeScript** · **JavaScript** · **YAML** · **Pandoc** · **XeLaTeX** · **Mermaid.js** |
+| **Salesforce** | **Apex** · **LWC** · **Experience Cloud (LWR)** · **GraphQL** · **Flow Builder** · **Education Cloud** · **Agentforce** |
+| **Integration & AI** | **OpenAPI 3.0** · **Apex REST** · **OAuth 2.0** · **Platform Events** · **Gemini API** |
+| **DevOps** | **GitHub Actions** · **Reusable Workflows** · **Salesforce CLI** · **Docker** · **Cloudflare** |
+| **Languages & Tools** | **Go** · **TypeScript** · **JavaScript** · **Python** · **YAML** · **Pandoc** · **XeLaTeX** · **Mermaid.js** |
 
 ---
 
-### Platform Architecture
+### Engineering Highlights
 
-**Salesforce Platform Architect Portfolio**
-*Multi-cloud pattern using Salesforce LWR, GraphQL, Apex, and AWS Lambda.*
+#### [Salesforce Platform Architect Portfolio](https://github.com/rdbumstead/salesforce-platform-architect-portfolio)
+
+[![CI/CD main](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml) [![PR Validation](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml) [![Live Smoke Test](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/smoke.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/smoke.yml) [![Daily Org Heartbeat](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml)
+
+> *A public website built on Salesforce Experience Cloud, live at [ryanbumstead.com](https://ryanbumstead.com) since October 2026, with its architecture, APIs and delivery pipeline open to inspection.*
+
+> [!TIP]
+> **Read the design on the site at [ryanbumstead.com/docs](https://ryanbumstead.com/docs), or in the [Governance Hub](https://rdbumstead.github.io/salesforce-platform-architect-portfolio/).**
+
+* **Architecture on record:** 6 enterprise guides and 34 [Architectural Decision Records](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/tree/main/docs/adr), each marked built, superseded or design only.
+* **Contract-first APIs:** a System API and a Process API described in OpenAPI 3.0 (15 and 8 paths), served by Apex REST behind OAuth 2.0 client credentials. Any reviewer can request a short-lived token and call them with curl.
+* **Governed AI:** one provider dispatch sends cover letter prompts to Gemini, grounded on portfolio records, and falls back to a deterministic local template when Gemini fails. The page shows which provider wrote each letter.
+* **Executable governance:** CI publishes a platform event for every production deploy and heartbeat, and the Delivery page checklist ticks only from that evidence.
+* **Observability and resilience:** the Glass Box footer shows live governor limits, daily org quotas and circuit breaker states. A "Simulate an outage" switch shows the cached fallback a visitor would get.
+* **Delivery pipeline:** every pull request runs a full scratch org deploy, every local test, a 90% coverage gate and a check only validation against production. Merges ship as delta deploys, and a read only smoke test checks the live site after each deploy and once a day.
 
 ```mermaid
 graph LR
@@ -73,25 +87,19 @@ graph LR
     %% ========= BRAND STYLES =========
     classDef user fill:#424242,stroke:#000000,stroke-width:2px,color:#ffffff,font-weight:bold;
     classDef sfdc fill:#00A1E0,stroke:#005FB2,stroke-width:2px,color:#ffffff,font-weight:bold;
-    classDef aws fill:#FF9900,stroke:#CC7A00,stroke-width:2px,color:#ffffff,font-weight:bold;
     classDef jira fill:#0052CC,stroke:#003A8F,stroke-width:2px,color:#ffffff,font-weight:bold;
     classDef github fill:#24292E,stroke:#000000,stroke-width:2px,color:#ffffff,font-weight:bold;
     classDef data fill:#8E24AA,stroke:#4A148C,stroke-width:2px,color:#ffffff,font-weight:bold;
-    classDef future fill:#FFF3E0,stroke:#FB8C00,stroke-width:2px,stroke-dasharray:5 5;
 
     %% ========= NODES =========
     User((User))
     LWR[Experience Cloud<br/>LWR]
     GQL[Salesforce<br/>GraphQL]
-    Apex[Apex Runtime]
+    Apex[Apex Runtime<br/>with the Local Template]
     DB[(Custom Objects)]
-    AI[Agentforce]
+    AI[Gemini API]
     Jira[Jira Cloud API]
     GitHub[GitHub API]
-
-    subgraph Roadmap ["Future Roadmap (Phase 2)"]
-        Lambda[AWS Lambda<br/>Offload Compute]
-    end
 
     %% ========= FLOWS =========
     User --> LWR
@@ -102,55 +110,48 @@ graph LR
     Apex --> Jira
     Apex --> GitHub
 
-    %% ========= FUTURE =========
-    LWR -.-> Lambda
-    Lambda -.-> Apex
-
     %% ========= APPLY STYLES =========
     class User user;
     class LWR,GQL,Apex,AI sfdc;
     class DB data;
     class Jira jira;
     class GitHub github;
-    class Lambda aws;
 
     %% ========= CRITICAL PATH =========
     linkStyle 0,1,2 stroke:#2ECC71,stroke-width:3px;
 ```
 
-### GlassOps Governance Protocol Flow
-*Control plane architecture separating governance from execution.*
+#### [GlassOps](https://github.com/glassops-platform/glassops)
 
-```mermaid
-flowchart LR
-    Intent[User Intent]
-    Policy[Policy Resolution]
-    Adapter[Execution Adapter]
-    Contract[Deployment Contract]
-    Enforce[Governance Enforcement]
-    Audit[Audit Trail]
+[![Status](https://img.shields.io/badge/Status-Rebuilding_as_a_CLI-FB8C00)](https://github.com/glassops-platform/glassops) [![License](https://img.shields.io/badge/License-Apache_2.0-blue)](https://github.com/glassops-platform/glassops/blob/main/LICENSE)
 
-    Intent --> Policy
-    Policy --> Adapter
-    Adapter --> Contract
-    Contract --> Enforce
-    Enforce --> Audit
+> *Governance-first Salesforce DevOps, being rebuilt as a CI-agnostic command line tool. Early work, with nothing released yet.*
 
-    classDef actor fill:#424242,stroke:#000000,stroke-width:2px,color:#ffffff,font-weight:bold
-    classDef policy fill:#8E24AA,stroke:#4A148C,stroke-width:2px,color:#ffffff,font-weight:bold
-    classDef action fill:#00A1E0,stroke:#005FB2,stroke-width:2px,color:#ffffff,font-weight:bold
-    classDef gate fill:#FB8C00,stroke:#E65100,stroke-width:2px,color:#ffffff,font-weight:bold
-    classDef record fill:#24292E,stroke:#000000,stroke-width:2px,color:#ffffff,font-weight:bold
+* **Where it's going:** one CLI that acts as the CI/CD layer for Salesforce delivery, keeping policy enforcement separate from the tools that run the deploy.
+* **What runs today:** a Go runtime packaged as a Docker container action. It checks configured freeze windows, can run static analysis, authenticates to an org with the JWT flow, and writes a permit and a deployment contract for the deploy step that follows.
+* **History:** the first TypeScript runtime is [archived](https://github.com/glassops-platform/glassops-runtime), and its ideas carry into the rebuild.
 
-    class Intent actor
-    class Policy policy
-    class Adapter action
-    class Enforce gate
-    class Contract,Audit record
-```
+#### [Setup Salesforce CLI Action](https://github.com/rdbumstead/setup-salesforce-action)
+[![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Setup%20Salesforce%20CLI-blue.svg)](https://github.com/marketplace/actions/setup-salesforce-cli)
+[![GitHub release](https://img.shields.io/github/v/release/rdbumstead/setup-salesforce-action)](https://github.com/rdbumstead/setup-salesforce-action/releases)
+[![Critical Tests](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-critical.yml/badge.svg)](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-critical.yml)
+[![Plugin Tests](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-plugins.yml/badge.svg)](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-plugins.yml)
+[![Authentication Tests](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-auth.yml/badge.svg)](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-auth.yml)
+[![Cross Platform Tests](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-cross-platform.yml/badge.svg)](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-cross-platform.yml) [![Invariants Tests](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-invariants.yml/badge.svg)](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-invariants.yml)
 
-### Resume as Code Architecture
-*Security-first CI/CD pipeline for professional documentation.*
+> *A GitHub Action on the Marketplace that sets up the Salesforce CLI for CI/CD pipelines.*
+
+* **Version pinned:** installs the exact CLI version a pipeline asks for, authenticates with JWT and installs the plugins it needs.
+* **Cached:** setup takes about 20 to 60 seconds from cache, against 1.5 to 3 minutes cold.
+
+#### ["Resume as Code" CI/CD Pipeline](https://github.com/rdbumstead/resume-as-code)
+[![Build Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/resume-pipeline.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code)
+[![Font Test Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/test-font-install.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code/actions/workflows/test-font-install.yml)
+> *Treating professional career documentation as a software product.*
+
+* **Custom Assembly Engine:** Engineered a Node.js engine that injects job titles ("Golden Headers") and contact details at build time.
+* **Secure Secret Injection:** Kept private contact information in GitHub Secrets, apart from the public source.
+* **High-Fidelity Compilation:** Orchestrated PDF generation using Pandoc and XeLaTeX.
 
 ```mermaid
 flowchart LR
@@ -199,94 +200,16 @@ flowchart LR
 
 ---
 
-### Engineering Highlights
-
-#### [GlassOps Governance Protocol](https://github.com/glassops-platform/glassops)
-
-[![Runtime Build & Test](https://github.com/glassops-platform/glassops/actions/workflows/runtime-docker.yml/badge.svg)](https://github.com/glassops-platform/glassops/actions/workflows/runtime-docker.yml)
-[![Docs Generation & Sync](https://github.com/glassops-platform/glassops/actions/workflows/docs.yml/badge.svg)](https://github.com/glassops-platform/glassops/actions/workflows/docs.yml)
-[![Docs Governance & Build](https://github.com/glassops-platform/glassops/actions/workflows/docs-governance-deploy.yml/badge.svg)](https://github.com/glassops-platform/glassops/actions/workflows/docs-governance-deploy.yml)
-[![Pages Deployment](https://github.com/glassops-platform/glassops/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/glassops-platform/glassops/actions/workflows/pages/pages-build-deployment)
-[![Docs Bot](https://github.com/glassops-platform/glassops/actions/workflows/docs-bot.yml/badge.svg)](https://github.com/glassops-platform/glassops/actions/workflows/docs-bot.yml)
-
-> An Open Source (Apache 2.0) Standard for Salesforce DevOps that separates policy enforcement from execution.
-
-> [!TIP]
-> **Check out the [Overview](https://github.com/glassops-platform/glassops/blob/main/docs/architecture/overview.md)!**
-
-- **Governance Control Plane:** Designed a system intended to enforce deployment outcomes independently of tooling.
-- **Policy & Contract Model:** Defined a model that normalizes results across execution engines such as native sf CLI and sfdx-hardis.
-- **Pluggable Adapter Pattern:** Architected a pattern allowing teams to swap execution engines without breaking compliance guarantees.
-- **Deployment Governance:** Formalized concepts including policy resolution, validation gates, and pass or fail arbitration.
-- **Tooling Strategy:** Positioned mature tools like sfdx-hardis as **first-class execution adapters**, not competitors.
-- **System Documentation:** Authored protocol-level architecture documentation treating governance as a system concern rather than a pipeline feature.
-
-#### [GlassOps Runtime](https://github.com/glassops-platform/glassops-runtime)
-
-[![Verify Primitives](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-primitives.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-primitives.yml)
-[![Integration Tests](https://github.com/glassops-platform/glassops-runtime/actions/workflows/integration-tests.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/integration-tests.yml)
-[![Verify Governance](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-governance.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-governance.yml)
-[![Plugin Whitelist Tests](https://github.com/glassops-platform/glassops-runtime/actions/workflows/plugin-whitelist-test.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/plugin-whitelist-test.yml)
-[![Verify Auth Contract](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-auth-contract.yml/badge.svg)](https://github.com/glassops-platform/glassops-runtime/actions/workflows/verify-auth-contract.yml)
-
-> *Production-grade execution infrastructure designed to provide the foundational layer for GlassOps governance.*
-
-- **Verified Primitives:** Engineered comprehensive test coverage ensuring consistent behavior across execution contexts.
-- **Governed Authentication:** Implemented authentication contracts supporting JWT, OAuth, and SFDX Auth URL patterns.
-- **Plugin Security:** Designed whitelist enforcement preventing unauthorized Salesforce CLI extensions.
-- **Governed Execution:** Enforces strict timeouts, validates inputs, and provides structured error handling with clear failure modes.
-- **Infrastructure Guarantees:** Established the foundational layer ensuring deployment outcomes are reproducible and auditable.
-
-> [!NOTE]
-> **Powers the GlassOps Governance Protocol execution layer.** Governance guarantees require infrastructure guarantees.
-
-#### [Salesforce Platform Architect Portfolio](https://github.com/rdbumstead/salesforce-platform-architect-portfolio)
-[![CI/CD - main](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml) [![PR Validation](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml) [![Cloudflare Worker](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy-worker.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy-worker.yml) [![Daily Org Heartbeat](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml)
-
-> *An open-source reference implementation for enterprise delivery patterns.*
-
-> [!TIP]
-> **View the full documentation in the [Governance Hub](https://rdbumstead.github.io/salesforce-platform-architect-portfolio/) for the best reading experience.**
-
-* **The Architecture:** Designed a multi-cloud system using Salesforce LWR, GraphQL, Apex, and AWS Lambda.
-* **The Governance:** Architected contract-first APIs (OpenAPI 3.0) and "Chaos Engineering" patterns to validate resilience against third-party failures.
-* **The Ops:** Zero-touch CI/CD with automated quality gates.
-* **Documentation:** Read my [Architectural Decision Records (ADRs)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/tree/main/docs/adr) to see how I handle security, FinOps, and resilience trade-offs.
-
-#### [Setup Salesforce CLI Action](https://github.com/rdbumstead/setup-salesforce-action)
-[![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Setup%20Salesforce%20CLI-blue.svg)](https://github.com/marketplace/actions/setup-salesforce-cli)
-[![GitHub release](https://img.shields.io/github/v/release/rdbumstead/setup-salesforce-action)](https://github.com/rdbumstead/setup-salesforce-action/releases)
-[![Critical Tests](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-critical.yml/badge.svg)](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-critical.yml)
-[![Plugin Tests](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-plugins.yml/badge.svg)](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-plugins.yml)
-[![Authentication Tests](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-auth.yml/badge.svg)](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-auth.yml)
-[![Cross Platform Tests](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-cross-platform.yml/badge.svg)](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-cross-platform.yml) [![Invariants Tests](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-invariants.yml/badge.svg)](https://github.com/rdbumstead/setup-salesforce-action/actions/workflows/test-invariants.yml)
-
-> *A production-ready GitHub Action for Salesforce CI/CD pipelines.*
-
-* **Enterprise-Grade Action:** Built GitHub Action for strictly version-pinned Salesforce CLI environments.
-* **Intelligent Caching:** Implemented fault-tolerant execution to reduce setup time by ~80%.
-
-#### ["Resume as Code" CI/CD Pipeline](https://github.com/rdbumstead/resume-as-code)
-[![Build Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/resume-pipeline.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code)
-[![Font Test Status](https://github.com/rdbumstead/resume-as-code/actions/workflows/test-font-install.yml/badge.svg)](https://github.com/rdbumstead/resume-as-code/actions/workflows/test-font-install.yml)
-> *Treating professional career documentation as a software product.*
-
-* **Custom Assembly Engine:** Engineered Node.js engine that dynamically injects job titles ("Golden Headers") and PII at runtime.
-* **Secure Secret Injection:** Implemented GitHub Secrets to separate public source code from private contact information in compiled artifacts.
-* **High-Fidelity Compilation:** Orchestrated PDF generation using Pandoc and XeLaTeX.
-
----
-
 ### Certifications
 
 * Salesforce Certified Education Cloud Consultant (Mar 2025)
 * Salesforce Certified Data 360 Consultant (Mar 2025)
 * Salesforce Certified Agentforce Specialist (Jan 2025)
 * Salesforce Certified Marketing Cloud Engagement Foundations (Jan 2025)
-* Salesforce Certified AI Associate (Jul 2024)
 * Salesforce Certified Platform App Builder (Sep 2024)
 * Salesforce Certified Platform Administrator II (Jul 2024)
 * Salesforce Certified Platform Administrator (Jun 2024)
+* Salesforce Certified AI Associate (Jul 2024, retired)
 
 [Verify these credentials on Trailhead ↗](https://www.salesforce.com/trailblazer/rbumstead)
 
