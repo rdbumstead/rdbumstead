@@ -58,7 +58,7 @@ Outside of client delivery, I build governance infrastructure for Salesforce dev
 | :--- | :--- |
 | **Salesforce** | **Apex** · **LWC** · **Experience Cloud (LWR)** · **GraphQL** · **Flow Builder** · **Education Cloud** · **Agentforce** |
 | **Integration & AI** | **OpenAPI 3.0** · **Apex REST** · **OAuth 2.0** · **Platform Events** · **Gemini API** |
-| **DevOps** | **GitHub Actions** · **Reusable Workflows** · **Salesforce CLI** · **Docker** · **Cloudflare** |
+| **DevOps** | **GitHub Actions** · **Reusable Workflows** · **Salesforce CLI** · **Docker** · **Cloudflare Pages and Functions** · **Playwright** |
 | **Languages & Tools** | **Go** · **TypeScript** · **JavaScript** · **Python** · **YAML** · **Pandoc** · **XeLaTeX** · **Mermaid.js** |
 
 ---
@@ -67,19 +67,20 @@ Outside of client delivery, I build governance infrastructure for Salesforce dev
 
 #### [Salesforce Platform Architect Portfolio](https://github.com/rdbumstead/salesforce-platform-architect-portfolio)
 
-[![CI/CD main](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml) [![PR Validation](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml) [![Live Smoke Test](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/smoke.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/smoke.yml) [![Daily Org Heartbeat](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml)
+[![CI/CD main](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/deploy.yml) [![Static Site](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/site.yml/badge.svg?branch=main)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/site.yml) [![PR Validation](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/pr.yml) [![Live Smoke Test](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/smoke.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/smoke.yml) [![Daily Org Heartbeat](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml/badge.svg)](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/actions/workflows/keep-alive.yml)
 
-> *A public website built on Salesforce Experience Cloud, live at [ryanbumstead.com](https://ryanbumstead.com) since October 2026, with its architecture, APIs and delivery pipeline open to inspection.*
+> *A public website built from a Salesforce org I designed, built and deploy myself, live at [ryanbumstead.com](https://ryanbumstead.com). Each build reads the org through an allowlisted API and publishes static pages on Cloudflare Pages, and the API Lab and AI Lab call the org live. Its architecture, APIs and delivery pipeline are open to inspection.*
 
 > [!TIP]
 > **Read the design on the site at [ryanbumstead.com/docs](https://ryanbumstead.com/docs), or in the [Governance Hub](https://rdbumstead.github.io/salesforce-platform-architect-portfolio/).**
 
-* **Architecture on record:** 6 enterprise guides and 34 [Architectural Decision Records](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/tree/main/docs/adr), each marked built, superseded or design only.
+* **Architecture on record:** 6 enterprise guides and 41 [Architectural Decision Records](https://github.com/rdbumstead/salesforce-platform-architect-portfolio/tree/main/docs/adr), each marked built, superseded or design only.
 * **Contract-first APIs:** a System API and a Process API described in OpenAPI 3.0 (15 and 8 paths), served by Apex REST behind OAuth 2.0 client credentials. Any reviewer can request a short-lived token and call them with curl.
-* **Governed AI:** one provider dispatch sends cover letter prompts to Gemini, grounded on portfolio records, and falls back to a deterministic local template when Gemini fails. The page shows which provider wrote each letter.
+* **Static front end, Salesforce as the source:** the same Lightning Web Components render static pages that read without JavaScript. The features that need a request, the forms, the cover letter, the API Lab and the live readings, go through Cloudflare Pages Functions to Apex, and each has its own switch between live and recorded data.
+* **Governed AI:** cover letters come from an Agentforce Prompt Builder template grounded on portfolio records. If Agentforce fails, the same dispatch falls back to Gemini and then to a local template built from the records. The page shows which provider wrote each letter.
 * **Executable governance:** CI publishes a platform event for every production deploy and heartbeat, and the Delivery page checklist ticks only from that evidence.
 * **Observability and resilience:** the Glass Box footer shows live governor limits, daily org quotas and circuit breaker states. A "Simulate an outage" switch shows the cached fallback a visitor would get.
-* **Delivery pipeline:** every pull request runs a full scratch org deploy, every local test, a 90% coverage gate and a check only validation against production. Merges ship as delta deploys, and a read only smoke test checks the live site after each deploy and once a day.
+* **Delivery pipeline:** every pull request runs a full scratch org deploy, every local test, a 90% coverage gate and a check only validation against production. Merges ship as delta deploys. After every production deploy, and every 6 hours, a site build publishes the static pages and smoke tests them in Chromium and WebKit, and a read only smoke test checks the live site once a day.
 
 ```mermaid
 graph LR
@@ -90,35 +91,40 @@ graph LR
     classDef jira fill:#0052CC,stroke:#003A8F,stroke-width:2px,color:#ffffff,font-weight:bold;
     classDef github fill:#24292E,stroke:#000000,stroke-width:2px,color:#ffffff,font-weight:bold;
     classDef data fill:#8E24AA,stroke:#4A148C,stroke-width:2px,color:#ffffff,font-weight:bold;
+    classDef edge fill:#F38020,stroke:#C25E0A,stroke-width:2px,color:#ffffff,font-weight:bold;
 
     %% ========= NODES =========
-    User((User))
-    LWR[Experience Cloud<br/>LWR]
-    GQL[Salesforce<br/>GraphQL]
-    Apex[Apex Runtime<br/>with the Local Template]
+    User((Visitor))
+    Pages[Cloudflare Pages<br/>static pages]
+    Fn[Pages Functions<br/>forms and labs]
+    Build[GitHub Actions<br/>site build]
+    Apex[Apex REST<br/>allowlisted API]
     DB[(Custom Objects)]
-    AI[Gemini API]
+    AI[Agentforce, then Gemini,<br/>then the Local Template]
     Jira[Jira Cloud API]
     GitHub[GitHub API]
 
     %% ========= FLOWS =========
-    User --> LWR
-    LWR --> GQL
-    GQL --> DB
-    LWR --> Apex
+    User --> Pages
+    Build -->|reads the export| Apex
+    Build -->|publishes| Pages
+    User --> Fn
+    Fn --> Apex
+    Apex --> DB
     Apex <--> AI
     Apex --> Jira
     Apex --> GitHub
 
     %% ========= APPLY STYLES =========
     class User user;
-    class LWR,GQL,Apex,AI sfdc;
+    class Pages,Fn edge;
+    class Apex,AI sfdc;
     class DB data;
     class Jira jira;
-    class GitHub github;
+    class Build,GitHub github;
 
     %% ========= CRITICAL PATH =========
-    linkStyle 0,1,2 stroke:#2ECC71,stroke-width:3px;
+    linkStyle 0 stroke:#2ECC71,stroke-width:3px;
 ```
 
 #### [GlassOps](https://github.com/glassops-platform/glassops)
